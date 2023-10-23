@@ -1,3 +1,5 @@
+package org.example;
+
 import org.example.Ticket;
 
 import java.util.Comparator;

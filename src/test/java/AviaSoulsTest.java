@@ -1,5 +1,6 @@
 import org.example.AviaSouls;
 import org.example.Ticket;
+import org.example.TicketTimeComparator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
