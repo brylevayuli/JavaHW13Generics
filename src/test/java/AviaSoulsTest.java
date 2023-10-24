@@ -4,33 +4,13 @@ import org.example.TicketTimeComparator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class AviaSoulsTest {
-
-//    @Test
-//    void testCompareTo1() {
-//        AviaSouls souls = new AviaSouls();
-//
-//        Ticket ticket1 = new Ticket("spb", "msk", 5_000, 12, 14);
-//        Ticket ticket2 = new Ticket("spb", "msk", 4_500, 12, 14);
-//        Ticket ticket3 = new Ticket("spb", "msk", 4_500, 12, 14);
-//
-//        souls.add(ticket1);
-//        souls.add(ticket2);
-//        souls.add(ticket3);
-//
-//       Ticket[] expected = { ticket3, ticket2, ticket1 };
-//       Ticket[] actual = souls.findAll();
-//
-//        Arrays.sort(expected);
-//        Arrays.sort(actual);
-//
-//       Assertions.assertArrayEquals(expected, actual);
-//    }
 
     @Test
     void testCompareTo() {
@@ -48,7 +28,7 @@ public class AviaSoulsTest {
         int result2 = ticket2.compareTo(ticket3); // Сравниваем билет 2 и билет 3 = 0
         int result3 = ticket3.compareTo(ticket1); // Сравниваем билет 3 и билет 1 = -1
 
-//        Ticket[] expected = { ticket3, ticket2, ticket1 };
+//        Ticket[] expected = { result3, result2, result1 };
 //        Ticket[] actual = souls.findAll();
 //
 //        Arrays.sort(expected);
