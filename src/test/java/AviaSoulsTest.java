@@ -13,35 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class AviaSoulsTest {
 
     @Test
-    void testCompareTo() {
-        AviaSouls souls = new AviaSouls();
-
-        Ticket ticket1 = new Ticket("Spb", "Msk", 5_000, 12, 14);
-        Ticket ticket2 = new Ticket("Kursk", "Orel", 4_500, 2, 3);
-        Ticket ticket3 = new Ticket("Ekb", "Kazan", 4_500, 17, 20);
-
-        souls.add(ticket1);
-        souls.add(ticket2);
-        souls.add(ticket3);
-
-        int result1 = ticket1.compareTo(ticket2); // Сравниваем билет 1 и билет 2 = 1
-        int result2 = ticket2.compareTo(ticket3); // Сравниваем билет 2 и билет 3 = 0
-        int result3 = ticket3.compareTo(ticket1); // Сравниваем билет 3 и билет 1 = -1
-
-//        Ticket[] expected = { result3, result2, result1 };
-//        Ticket[] actual = souls.findAll();
-//
-//        Arrays.sort(expected);
-//        Arrays.sort(actual);
-//
-//        Assertions.assertArrayEquals(expected, actual);
-
-        System.out.println("Результат сравнения ticket1 и ticket2: " + result1);
-        System.out.println("Результат сравнения ticket2 и ticket3: " + result2);
-        System.out.println("Результат сравнения ticket3 и ticket1: " + result3);
-    }
-
-    @Test
     void sortByPrice3() {
 
         AviaSouls souls = new AviaSouls();
